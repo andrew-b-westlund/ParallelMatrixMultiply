@@ -79,26 +79,16 @@ int main(int argc, char *argv[]) {
 	int *sizeTrials, *threadTrials;
 	#ifdef LOOP
 	{
-		// numOfSizeTrials = 4;
-		numOfSizeTrials = 1;
+		numOfSizeTrials = 4;
 		numOfThreadTrials = 7;
 		// sizeTrials = {100, 1000, 4000, 6000};
-		sizeTrials = (int *)malloc(1 * sizeof(int));
-		sizeTrials[0] = 2000;
-
-		/*
+		
 		sizeTrials = (int *)malloc(4 * sizeof(int));
 		sizeTrials[0] = 100;
 		sizeTrials[1] = 1000;
 		sizeTrials[2] = 4000;
 		sizeTrials[3] = 6000;
-		*/
-		/*
-		sizeTrials[0] = 1;
-		sizeTrials[1] = 2;
-		sizeTrials[2] = 3;
-		sizeTrials[3] = 4;
-		*/
+		
 		// threadTrials = {1, 2, 4, 8};
 		threadTrials = (int *)malloc(7 * sizeof(int));
 		threadTrials[0] = 1;
